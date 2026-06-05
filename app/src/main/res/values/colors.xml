@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Florida Gators Theme - Neon Orange & Bright Blue -->
+    
+    <!-- Primary Colors -->
+    <color name="neon_orange">#FF6600</color>
+    <color name="bright_blue">#0066FF</color>
+    <color name="dark_orange">#CC5500</color>
+    <color name="dark_blue">#0052CC</color>
+    
+    <!-- Accents -->
+    <color name="orange_accent">#FF8833</color>
+    <color name="blue_accent">#3385FF</color>
+    <color name="cyan_accent">#00CCFF</color>
+    
+    <!-- Background Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="medium_gray">#E0E0E0</color>
+    <color name="dark_gray">#424242</color>
+    <color name="black">#000000</color>
+    <color name="dark_background">#121212</color>
+    
+    <!-- Message Bubble Colors -->
+    <color name="sent_message_bg">#FF6600</color>
+    <color name="received_message_bg">#F0F0F0</color>
+    <color name="sent_message_text">#FFFFFF</color>
+    <color name="received_message_text">#000000</color>
+    
+    <!-- Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="error_red">#FF3B30</color>
+    <color name="warning_yellow">#FFC107</color>
+    
+    <!-- Spam/Firewall Colors -->
+    <color name="spam_red">#FF3B30</color>
+    <color name="blocked_gray">#808080</color>
+    <color name="safe_green">#4CAF50</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#666666</color>
+    <color name="text_hint">#999999</color>
+    
+    <!-- Divider -->
+    <color name="divider_color">#BDBDBD</color>
+</resources>
