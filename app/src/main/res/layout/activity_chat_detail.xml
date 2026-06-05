@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.chat.ChatDetailActivity">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbarfold.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/neon_orange"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbarfold.AppBarLayout>
+
+    <!-- Messages RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        tools:listitem="@layout/item_message" />
+
+    <!-- Message Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/light_gray"
+        android:gravity="bottom">
+
+        <!-- Camera Button -->
+        <ImageButton
+            android:id="@+id/btnCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_camera"
+            android:scaleType="centerInside"
+            android:background="@color/bright_blue"
+            android:contentDescription="@string/camera"
+            app:tint="@color/white" />
+
+        <!-- Attachment Button -->
+        <ImageButton
+            android:id="@+id/btnAttach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_attach"
+            android:scaleType="centerInside"
+            android:background="@color/bright_blue"
+            android:contentDescription="@string/attachment"
+            app:tint="@color/white" />
+
+        <!-- Message Input Field -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:hint="@string/type_message"
+            android:inputType="text|textMultiLine"
+            android:maxLines="4"
+            android:minLines="1"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint" />
+
+        <!-- Send Button -->
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/send"
+            android:paddingHorizontal="16dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/neon_orange"
+            style="@style/Widget.MaterialComponents.Button" />
+
+    </LinearLayout>
+
+</LinearLayout>
